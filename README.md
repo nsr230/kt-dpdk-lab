@@ -45,6 +45,7 @@ https://docs.openstack.org/kolla-ansible/rocky/reference/networking-guide.html
 all-in-one  globals.yml  multinode  passwords.yml
 16. vi /etc/kolla/gloabals.yml 
 ---
+```
 kolla_base_distro: "centos"
 kolla_install_type: "source"
 kolla_internal_vip_address: "192.168.122.250"
@@ -52,7 +53,7 @@ network_interface: "enp1s0"
 neutron_external_interface: "enp1s0"
 enable_openvswitch: "{{ enable_neutron | bool and neutron_plugin_agent != 'linuxbridge' }}"
 kuryr_install_type: source
-
+```
 17. kolla-genpwd
 18. vi /etc/kolla/passwords.yml
   - keystone_admin_password: openstack
