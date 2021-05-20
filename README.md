@@ -14,6 +14,12 @@ vi /etc/default/grub
 biosdevname=0 net.ifnames=0
 ```
 
+
+T/S
+-----
+libvirtd issue:
+-> removed the libvirt-lock file
+
 - 노트북에 CentOS7/8버전 설치
 - libvirt기반으로 가상머신 1대 구성
   * yum group install "Virtualization Hosts" -y
