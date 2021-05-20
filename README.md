@@ -60,8 +60,10 @@ kuryr_install_type: source
 19. ssh-keygen -t rsa -N '' 
 20. ssh-copy-id root@node
 21. vi /etc/kolla/all-in-one
+```
 :%s/localhost/node/g
 :%s/ansible_connection=local//g
+```
 
 22. kolla-ansible -i all-in-one bootstrap-servers
 23. kolla-ansible -i /etc/kolla/all-in-one prechecks
