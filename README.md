@@ -4,6 +4,7 @@ OpenStack install with DPDK
 Links
 -----
 https://docs.openstack.org/kolla-ansible/rocky/reference/networking-guide.html
+
 https://docs.openstack.org/tacker/latest/install/kolla.html
 
 
