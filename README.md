@@ -18,7 +18,7 @@ biosdevname=0 net.ifnames=0
 
 T/S
 -----
-libvirtd issue:
+**libvirtd issue:**
 -> removed the libvirt-lock file
 
 - 노트북에 CentOS7/8버전 설치
