@@ -26,26 +26,33 @@ INSTRUCTION
 ----
 - 노트북에 CentOS7/8버전 설치
 - libvirt기반으로 가상머신 1대 구성
-  * yum group install "Virtualization Hosts" -y
-  * yum install virt-manager
-  * vi /etc/modprobe.d/nested.conf
-    options kvm_intel nested=Y
-    
+```
+  yum group install "Virtualization Hosts" -y
+  yum install virt-manager
+  vi /etc/modprobe.d/nested.conf
+     options kvm_intel nested=Y
+```
+
 - 가상머신을 생성한다
-  * vcpu: 4~8
-  * vmem: least 8GiB, 16GiB max
-  * disk: least 30GiB, 100Gib recommend
-  * cpu: hosted-passthrough
-  * nic1: default, e1000, default
-  * nic2: default, e1000, internal
-  
+```
+  vcpu: 4~8
+  vmem: least 8GiB, 16GiB max
+  disk: least 30GiB, 100Gib recommend
+  cpu: hosted-passthrough
+  nic1: default, e1000, default
+  nic2: default, e1000, internal
+```
+
 1. 가상머신을 CentOS 8버전으로 설치한다. 
 2. 모든 패키지 업데이트 수행
+```
   - yum update -y && reboot
+```
 3. 아이피 설정 eth0,eth1 
+```
   - eth0: 192.168.122.110
   - eth1: 192.168.90.110
-
+```
 4. Lab에서 필요없는 서비스 중지
   - systemctl stop firewalld && systemctl disable firewalld && systemctl status firewalld
 5. A recode대신, /etc/hosts에 다음과 같은 정보 입력
