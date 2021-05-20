@@ -21,6 +21,9 @@ T/S
 **libvirtd issue:**
 -> removed the libvirt-lock file
 
+
+INSTRUCTION
+----
 - 노트북에 CentOS7/8버전 설치
 - libvirt기반으로 가상머신 1대 구성
   * yum group install "Virtualization Hosts" -y
