@@ -24,7 +24,7 @@ Trouble Shooting with Kolla
 INSTRUCTION
 ----
 
-- 노트북에 CentOS7/8버전 설치
+- 노트북/데스크탑 CentOS7/8버전 설치
 
 앤서블 기반으로 랩 구성을 하려면 GITHUB에서 **build-lab**에서 플레이북을 실행 합니다. 플레이북 실행은 해당 디렉터리에 들어가면 나옵니다. 이 플레이북은 Red hat계열에서 테스트가 되었습니다.
 
